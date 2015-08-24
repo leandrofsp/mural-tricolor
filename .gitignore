@@ -1,0 +1,5 @@
+bower_components
+.idea
+firebase.json
+node_modules
+npm-debug.log

@@ -8,7 +8,7 @@
 	function HomeCtrl($scope, APP_SETTINGS, $firebaseArray) {
         var vm = this;
         var ref = new Firebase(APP_SETTINGS.FIREBASE_URL + '/posts');
-        ref.orderByKey().limitToLast(25);
+        ref.orderByKey().limitToFirst(25);
 
         vm.posts = [];
 
@@ -19,4 +19,5 @@
         }
 
       }
+  
 })();
